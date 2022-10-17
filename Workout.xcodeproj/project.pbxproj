@@ -12,6 +12,7 @@
 		041C85E328FD0B9600CBFC70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 041C85E228FD0B9600CBFC70 /* Assets.xcassets */; };
 		041C85E628FD0B9600CBFC70 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 041C85E528FD0B9600CBFC70 /* Preview Assets.xcassets */; };
 		041C85ED28FD0BC400CBFC70 /* WorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041C85EC28FD0BC400CBFC70 /* WorkoutView.swift */; };
+		047D9F3928FDCEF500A9FCDB /* LegWorkout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047D9F3828FDCEF500A9FCDB /* LegWorkout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		041C85E228FD0B9600CBFC70 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		041C85E528FD0B9600CBFC70 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		041C85EC28FD0BC400CBFC70 /* WorkoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutView.swift; sourceTree = "<group>"; };
+		047D9F3828FDCEF500A9FCDB /* LegWorkout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegWorkout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 				041C85DE28FD0B8D00CBFC70 /* WorkoutApp.swift */,
 				041C85E028FD0B8D00CBFC70 /* ContentView.swift */,
 				041C85EC28FD0BC400CBFC70 /* WorkoutView.swift */,
+				047D9F3828FDCEF500A9FCDB /* LegWorkout.swift */,
 				041C85E228FD0B9600CBFC70 /* Assets.xcassets */,
 				041C85E428FD0B9600CBFC70 /* Preview Content */,
 			);
@@ -142,6 +145,7 @@
 			files = (
 				041C85E128FD0B8D00CBFC70 /* ContentView.swift in Sources */,
 				041C85ED28FD0BC400CBFC70 /* WorkoutView.swift in Sources */,
+				047D9F3928FDCEF500A9FCDB /* LegWorkout.swift in Sources */,
 				041C85DF28FD0B8D00CBFC70 /* WorkoutApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
