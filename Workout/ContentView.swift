@@ -11,6 +11,7 @@ struct ContentView: View {
     var body: some View {
         
         ZStack{
+            
             Rectangle().edgesIgnoringSafeArea(.all).foregroundColor(Color(hue: 1.0, saturation: 0.127, brightness: 0.174))
             
             VStack{
@@ -32,12 +33,22 @@ struct ContentView: View {
                 HStack{
                     
                     Spacer()
-                    
-                    Text("Add A Workout").font(.body).foregroundColor(.white).padding(.all,10.0).background(Color.green.opacity(0.5)).cornerRadius(20).padding(.all, 5)
+                    Button("Add Workout") {
+                        /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
+                    }
+                    .accentColor(/*@START_MENU_TOKEN@*/.green/*@END_MENU_TOKEN@*/)
+                    .dynamicTypeSize(/*@START_MENU_TOKEN@*/.xxxLarge/*@END_MENU_TOKEN@*/)
+
+                   
                     
                     Spacer()
                     
-                    Text("Delete A Workout").font(.body).foregroundColor(.white).multilineTextAlignment(.center).padding(.all,10.0).background(Color.red.opacity(0.5)).cornerRadius(20).padding(.all,5)
+                    Spacer()
+                    Button("Delete Workout") {
+                        /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
+                    }
+                    .accentColor(.red)
+                    .dynamicTypeSize(/*@START_MENU_TOKEN@*/.xxxLarge/*@END_MENU_TOKEN@*/)
                     
                     Spacer()
                 }

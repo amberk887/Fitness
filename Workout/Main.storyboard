@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--My Workouts-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="MainViewController" customModule="Workout" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gFZ-wd-DgX">
+                                <rect key="frame" x="109" y="405" width="163" height="53"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="JJR-E9-1U9"/>
+                                    <constraint firstAttribute="width" constant="311" id="KZW-Qb-bi9"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="X6n-xi-syi"/>
+                                </constraints>
+                                <size key="titleShadowOffset" width="8" height="0.0"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Arm Workout" cornerStyle="dynamic">
+                                    <backgroundConfiguration key="background" cornerRadius="18" strokeWidth="2" strokeOutset="4">
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="strokeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle2"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="TNx-zz-74R" kind="show" id="HKI-ma-c5j"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f6I-WV-8uc">
+                                <rect key="frame" x="109" y="490" width="172" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Qhd-KA-fUQ"/>
+                                    <constraint firstAttribute="height" constant="50" id="kDT-ft-1Lg"/>
+                                </constraints>
+                                <size key="titleShadowOffset" width="8" height="0.0"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Cardio Workout" cornerStyle="dynamic">
+                                    <backgroundConfiguration key="background" cornerRadius="18" strokeWidth="2" strokeOutset="4">
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="strokeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle2"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="8ca-Il-nf4" kind="show" id="MgO-7L-yiW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yyz-xm-UyT">
+                                <rect key="frame" x="109" y="237" width="172" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ZOo-fG-If8"/>
+                                    <constraint firstAttribute="width" constant="50" id="h1X-v3-1PX"/>
+                                </constraints>
+                                <size key="titleShadowOffset" width="8" height="0.0"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Leg Workout" cornerStyle="dynamic">
+                                    <backgroundConfiguration key="background" cornerRadius="18" strokeWidth="2" strokeOutset="4">
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="strokeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle2"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="Mia-vm-uEo" kind="show" id="mCm-g8-prs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wd4-Ij-vkR">
+                                <rect key="frame" x="109" y="319" width="172" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="FO0-wL-UAQ"/>
+                                    <constraint firstAttribute="width" constant="200" id="HAt-uZ-xIp"/>
+                                </constraints>
+                                <size key="titleShadowOffset" width="8" height="0.0"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Ab Workout" cornerStyle="dynamic">
+                                    <backgroundConfiguration key="background" cornerRadius="18" strokeWidth="2" strokeOutset="4">
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="strokeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle2"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" red="0.11940757515504186" green="0.11940757515504186" blue="0.11940757515504186" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Yyz-xm-UyT" firstAttribute="leading" secondItem="f6I-WV-8uc" secondAttribute="leading" id="0N1-QY-6rl"/>
+                            <constraint firstItem="Yyz-xm-UyT" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="35" id="1Yk-d9-J5f"/>
+                            <constraint firstItem="f6I-WV-8uc" firstAttribute="top" secondItem="gFZ-wd-DgX" secondAttribute="bottom" constant="32" id="EXy-dW-4Pb"/>
+                            <constraint firstItem="Yyz-xm-UyT" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="Een-9I-rtE"/>
+                            <constraint firstItem="Yyz-xm-UyT" firstAttribute="trailing" secondItem="wd4-Ij-vkR" secondAttribute="trailing" id="TrU-T5-ZGi"/>
+                            <constraint firstItem="gFZ-wd-DgX" firstAttribute="leading" secondItem="f6I-WV-8uc" secondAttribute="leading" id="XVx-qq-Q0Z"/>
+                            <constraint firstItem="Yyz-xm-UyT" firstAttribute="trailing" secondItem="f6I-WV-8uc" secondAttribute="trailing" id="dU5-lP-RA9"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="gFZ-wd-DgX" secondAttribute="trailing" constant="44" id="hMo-ia-lxV"/>
+                            <constraint firstItem="wd4-Ij-vkR" firstAttribute="top" secondItem="Yyz-xm-UyT" secondAttribute="bottom" constant="32" id="kE2-aF-cr7"/>
+                            <constraint firstItem="Yyz-xm-UyT" firstAttribute="leading" secondItem="wd4-Ij-vkR" secondAttribute="leading" id="ldA-FF-hAo"/>
+                            <constraint firstItem="gFZ-wd-DgX" firstAttribute="top" secondItem="wd4-Ij-vkR" secondAttribute="bottom" constant="36" id="oEc-ZJ-DLY"/>
+                            <constraint firstItem="Yyz-xm-UyT" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" constant="229" id="udu-02-lGe"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="My Workouts" id="9LC-fY-JdE"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1050.7692307692307" y="3.5545023696682461"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="dT7-by-oND">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1gr-fd-vOc" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="EFT-ho-X4Z">
+                        <rect key="frame" x="0.0" y="47" width="390" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="x6n-pJ-90f"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uD3-tG-bFq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="121.53846153846153" y="3.5545023696682461"/>
+        </scene>
+        <!--Leg Workout-->
+        <scene sceneID="Xey-HD-Gaq">
+            <objects>
+                <viewController id="Mia-vm-uEo" customClass="LegViewController" customModule="Workout" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2E8-5P-93s">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="zIM-V1-xLK"/>
+                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Leg Workout" id="Eck-40-QwS"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z33-aV-okP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1942" y="-675"/>
+        </scene>
+        <!--Arm Workout-->
+        <scene sceneID="PZB-nJ-mqz">
+            <objects>
+                <viewController id="TNx-zz-74R" customClass="ArmViewController" customModule="Workout" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VdV-PK-nfQ">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Vzs-Tr-mQr"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" systemColor="opaqueSeparatorColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Arm Workout" id="1Z1-No-QCA">
+                        <barButtonItem key="backBarButtonItem" title="My Workouts" id="HuS-sU-Lk9"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K7f-aR-xqg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1943" y="4"/>
+        </scene>
+        <!--Cardio Workout-->
+        <scene sceneID="8dl-45-3MX">
+            <objects>
+                <viewController id="8ca-Il-nf4" customClass="CardioViewController" customModule="Workout" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lAX-mv-aYp">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Rjh-bx-oHw"/>
+                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Cardio Workout" id="qDg-qy-s1f"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4bY-tl-W4B" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1942" y="758"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="B81-Nu-hr5">
+            <objects>
+                <viewController id="K1G-uF-N6w" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6dp-tP-Wkl">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="5av-nP-UWC"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rBl-yu-CMs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1942" y="1469"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" systemColor="systemGray5Color"/>
+    <resources>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
