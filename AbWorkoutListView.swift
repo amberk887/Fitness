@@ -7,39 +7,47 @@
 
 import SwiftUI
 
-struct WorkoutListView: View {
-    
-    var videos: [Video] = VideoList.topTen
+struct AbWorkoutListView: View {
+    @State var isSelected: Bool = false
+    var abmoves: [abMoves] = abMoveList.topTen
     
     var body: some View {
         NavigationView{
-            List(videos, id: \.id) {video in
+            List(abmoves, id: \.id) {abmove in
                 HStack{
-                    Image(video.imageName)
+                    Image(abmove.imageName)
                         .resizable()
                         .scaledToFit()
                         .frame(height:80)
                         .cornerRadius(4)
                     
                     VStack(alignment: .leading, spacing: 5){
-                        Text(video.title)
+                        Text(abmove.title)
                             .fontWeight(.semibold)
                             .lineLimit(2)
                             .minimumScaleFactor(0.5)
                         
-                        Text(String(video.repCount)+" reps")
+                        Text(String(abmove.repCount)+" reps")
                             .font(.subheadline)
                             .foregroundColor(.secondary)
                     }
+                    Spacer()
+                    Group{
+                        Toggle(isOn: $isSelected){
+                            Label("",systemImage: "checkmark.circle").labelsHidden().symbolVariant(isSelected ?.fill : .none)
+                        }
+                        .toggleStyle(.button)
+                    }
+
                 }
             }
-            .navigationTitle("Arm Workout")
+            .navigationTitle("Ab Workout")
         }
     }
 }
 
-struct WorkoutListView_Previews: PreviewProvider {
+struct AbWorkoutListView_Previews: PreviewProvider {
     static var previews: some View {
-        WorkoutListView()
+        AbWorkoutListView()
     }
 }

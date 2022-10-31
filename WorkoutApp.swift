@@ -1,9 +1,3 @@
-//
-//  WorkoutApp.swift
-//  Workout
-//
-//  Created by Heather Kusma on 10/17/22.
-//
 
 import SwiftUI
 
@@ -11,7 +5,7 @@ import SwiftUI
 struct WorkoutApp: App {
     var body: some Scene {
         WindowGroup {
-            
+            ContentView()
         }
     }
 }

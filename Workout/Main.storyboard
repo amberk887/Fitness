@@ -146,7 +146,7 @@
         <!--Leg Workout-->
         <scene sceneID="Xey-HD-Gaq">
             <objects>
-                <viewController id="Mia-vm-uEo" customClass="LegViewController" customModule="Workout" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Mia-vm-uEo" customClass="LegViewController" customModule="Workout" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2E8-5P-93s">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -163,7 +163,7 @@
         <scene sceneID="PZB-nJ-mqz">
             <objects>
                 <viewController id="TNx-zz-74R" customClass="ArmViewController" customModule="Workout" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="VdV-PK-nfQ">
+                    <view key="view" contentMode="scaleToFill" id="VdV-PK-nfQ" customClass="WorkoutListView">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="Vzs-Tr-mQr"/>
