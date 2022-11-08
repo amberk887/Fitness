@@ -51,6 +51,7 @@ struct ContentView: View {
                         .cornerRadius(12)
                 }
                 Spacer()
+                Spacer()
                 HStack{
                     Spacer()
                     NavigationLink(destination: NewWorkout()){
