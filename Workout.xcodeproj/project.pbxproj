@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		041999772922AD820033E69A /* NewWorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041999762922AD820033E69A /* NewWorkoutView.swift */; };
 		041C85E128FD0B8D00CBFC70 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041C85E028FD0B8D00CBFC70 /* ContentView.swift */; };
 		041C85E328FD0B9600CBFC70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 041C85E228FD0B9600CBFC70 /* Assets.xcassets */; };
 		041C85E628FD0B9600CBFC70 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 041C85E528FD0B9600CBFC70 /* Preview Assets.xcassets */; };
@@ -34,6 +35,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		041999762922AD820033E69A /* NewWorkoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewWorkoutView.swift; sourceTree = "<group>"; };
 		041C85DB28FD0B8D00CBFC70 /* Workout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Workout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		041C85E028FD0B8D00CBFC70 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		041C85E228FD0B9600CBFC70 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 				0482B3FE29070FCD0004F2C9 /* WorkoutDescription.swift */,
 				0482B400290711DA0004F2C9 /* ArmWorkoutListView.swift */,
 				04371FC72910457800DEC866 /* NewWorkout.swift */,
+				041999762922AD820033E69A /* NewWorkoutView.swift */,
 				04C97AF729082D0F0017970B /* LWorkoutDescription.swift */,
 				04C97AFB290833EF0017970B /* CWorkoutDescription.swift */,
 				04C97AFD290833FF0017970B /* CWorkoutListView.swift */,
@@ -213,6 +216,7 @@
 				047D9F3B28FDD0C400A9FCDB /* CardioWorkout.swift in Sources */,
 				041C85E128FD0B8D00CBFC70 /* ContentView.swift in Sources */,
 				04C97B02290834440017970B /* AbWorkoutDescription.swift in Sources */,
+				041999772922AD820033E69A /* NewWorkoutView.swift in Sources */,
 				041C85ED28FD0BC400CBFC70 /* WorkoutView.swift in Sources */,
 				0463A3B32910301B0077A44A /* WorkoutList.swift in Sources */,
 				0482B3FF29070FCD0004F2C9 /* WorkoutDescription.swift in Sources */,
