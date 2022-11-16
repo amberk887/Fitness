@@ -26,35 +26,35 @@ struct LMoveList {
               title: "deadlift",
               repCount: 15),
         
-        LMoves(imageName: "front-lunges",
+        LMoves(imageName: "front lunges",
               title: "forward lunges (R)",
               repCount: 15),
               
-        LMoves(imageName: "front-lunges",
+        LMoves(imageName: "front lunges",
               title: "forward lunges (L)",
               repCount: 15),
              
-        LMoves(imageName: "donkey-kicks",
+        LMoves(imageName: "donkey kicks",
               title: "donkey kicks",
               repCount: 30),
             
-        LMoves(imageName: "fire-hydrant",
+        LMoves(imageName: "fire hydrant",
               title: "fire hydrants",
               repCount: 30),
               
-        LMoves(imageName: "hip-thrusts",
+        LMoves(imageName: "hip thrusts",
               title: "hip thrursts",
               repCount: 15),
         
-        LMoves(imageName: "squat-to-raise",
+        LMoves(imageName: "squat to raise",
               title: "squat to overhead raise",
               repCount: 15),
             
-        LMoves(imageName: "back-lunges",
+        LMoves(imageName: "back lunges",
               title: "back lunges (R)",
               repCount: 15),
               
-        LMoves(imageName: "back-lunges",
+        LMoves(imageName: "back lunges",
               title: "back lunges (L)",
               repCount: 15),
     ]

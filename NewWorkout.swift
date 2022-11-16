@@ -8,8 +8,7 @@
 import SwiftUI
 
 struct NewWorkout: View {
-    var exercises = ["back flies","push ups", "bicep curl", "tricep kickbacks", "skull crushers", "tricep dips", "arnold press", "shoulder press", "chest press"]
-    
+    var exercises = ["back flies","push ups", "bicep curl", "tricep kickbacks", "skull crushers", "tricep dips", "arnold press", "shoulder press", "chest press", "back lunges", "burpees", "crunches", "deadbugs", "deadlift", "donkey kicks","fast feet", "fire hydrant", "front lunges", "high knees", "hip thrusts", "inchworms", "jump squats", "jumping jacks", "lateral raises", "mountain climbers", "plank jacks", "renegade rows", "roll ups", "russian twists", "scissor kicks", "shoulder taps"]
     @State var selectedex1 = "back flies"
     @State var selectedex2 = "back flies"
     @State var selectedex3 = "back flies"
@@ -69,6 +68,7 @@ struct NewWorkout: View {
                                     Text($0)
                                 }
                             }
+                        }
                             HStack{
                                 Spacer()
                                 Stepper(value: $rep2) {
@@ -109,72 +109,72 @@ struct NewWorkout: View {
                                 Spacer()
                             }
                         }
-                        Group{
-                            HStack{
-                                Text("Excercise 5")
-                                    .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
-                                Picker("Exercise 5", selection: $selectedex5) {
-                                    ForEach(exercises, id: \.self) {
-                                        Text($0)
-                                    }
+                    Group{
+                        HStack{
+                            Text("Excercise 5")
+                                .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                            Picker("Exercise 5", selection: $selectedex5) {
+                                ForEach(exercises, id: \.self) {
+                                    Text($0)
                                 }
-                            }
-                            HStack{
-                                Spacer()
-                                Stepper(value: $rep5) {
-                                    Text("Reps\t\(rep5)").fontWeight(.bold).padding(.leading, 175.0)
-                                }
-                                Spacer()
-                            }
-                            HStack{
-                                Text("Excercise 6")
-                                    .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
-                                Picker("Exercise 6", selection: $selectedex6) {
-                                    ForEach(exercises, id: \.self) {
-                                        Text($0)
-                                    }
-                                }
-                            }
-                            HStack{
-                                Spacer()
-                                Stepper(value: $rep6) {
-                                    Text("Reps\t\(rep6)").fontWeight(.bold).padding(.leading, 175.0)
-                                }
-                                Spacer()
-                            }
-                            HStack{
-                                Text("Excercise 7")
-                                    .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
-                                Picker("Exercise 7", selection: $selectedex7) {
-                                    ForEach(exercises, id: \.self) {
-                                        Text($0)
-                                    }
-                                }
-                            }
-                            HStack{
-                                Spacer()
-                                Stepper(value: $rep7) {
-                                    Text("Reps\t\(rep7)").fontWeight(.bold).padding(.leading, 175.0)
-                                }
-                                Spacer()
-                            }
-                            HStack{
-                                Text("Excercise 8")
-                                    .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
-                                Picker("Exercise 8", selection: $selectedex8) {
-                                    ForEach(exercises, id: \.self) {
-                                        Text($0)
-                                    }
-                                }
-                            }
-                            HStack{
-                                Spacer()
-                                Stepper(value: $rep8) {
-                                    Text("Reps\t\(rep8)").fontWeight(.bold).padding(.leading, 175.0)
-                                }
-                                Spacer()
                             }
                         }
+                        HStack{
+                            Spacer()
+                            Stepper(value: $rep5) {
+                                Text("Reps\t\(rep5)").fontWeight(.bold).padding(.leading, 175.0)
+                            }
+                            Spacer()
+                        }
+                        HStack{
+                            Text("Excercise 6")
+                                .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                            Picker("Exercise 6", selection: $selectedex6) {
+                                ForEach(exercises, id: \.self) {
+                                    Text($0)
+                                }
+                            }
+                        }
+                        HStack{
+                            Spacer()
+                            Stepper(value: $rep6) {
+                                Text("Reps\t\(rep6)").fontWeight(.bold).padding(.leading, 175.0)
+                            }
+                            Spacer()
+                        }
+                        HStack{
+                            Text("Excercise 7")
+                                .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                            Picker("Exercise 7", selection: $selectedex7) {
+                                ForEach(exercises, id: \.self) {
+                                    Text($0)
+                                }
+                            }
+                        }
+                        HStack{
+                            Spacer()
+                            Stepper(value: $rep7) {
+                                Text("Reps\t\(rep7)").fontWeight(.bold).padding(.leading, 175.0)
+                            }
+                            Spacer()
+                        }
+                        HStack{
+                            Text("Excercise 8")
+                                .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                            Picker("Exercise 8", selection: $selectedex8) {
+                                ForEach(exercises, id: \.self) {
+                                    Text($0)
+                                }
+                            }
+                        }
+                        HStack{
+                            Spacer()
+                            Stepper(value: $rep8) {
+                                Text("Reps\t\(rep8)").fontWeight(.bold).padding(.leading, 175.0)
+                            }
+                            Spacer()
+                        }
+                    }
                         Group{
                             HStack{
                                 Text("Excercise 9")
@@ -254,7 +254,11 @@ struct NewWorkout: View {
                                 
                                 Spacer()
                                 
-                                NavigationLink(destination: NewWorkoutView(workoutTitle: $workouttitle, rep1: $rep,  rep2: $rep2, rep3: $rep3, rep4: $rep4, rep5: $rep5, rep6: $rep6, rep7: $rep7, rep8: $rep8, rep9: $rep9, rep10: $rep10, rep11: $rep11, rep12: $rep12, selectedEx1: $selectedex1, selectedEx2: $selectedex2, selectedEx3: $selectedex3, selectedEx4: $selectedex4)){
+                                NavigationLink(destination: NewWorkoutView(workoutTitle: $workouttitle, rep1: $rep,  rep2: $rep2, rep3: $rep3, rep4: $rep4, rep5: $rep5, rep6: $rep6, rep7: $rep7, rep8: $rep8, rep9: $rep9, rep10: $rep10, rep11: $rep11, rep12: $rep12, selectedEx1: $selectedex1, selectedEx2: $selectedex2, selectedEx3: $selectedex3, selectedEx4: $selectedex4, selectedEx5: $selectedex5, selectedEx6: $selectedex6,
+                                    selectedEx7:
+                                    $selectedex7,
+                                                            selectedEx8:    $selectedex8,selectedEx9:
+                                                                                                           $selectedex9, selectedEx10:    $selectedex10)){
                                     Text("Create Workout")
                                         .font(.title3)
                                         .foregroundColor(Color.white)
@@ -278,7 +282,7 @@ struct NewWorkout: View {
             
         }
     }
-}
+
     
     struct NewWorkout_Previews: PreviewProvider {
         static var previews: some View {

@@ -21,31 +21,31 @@ struct CMoveList {
               title: "burpees",
               repCount: 20),
               
-        CMoves(imageName: "jumpingjacks",
+        CMoves(imageName: "jumping jacks",
               title: "jumping jacks",
               repCount: 15),
         
-        CMoves(imageName: "mountain-climbers",
+        CMoves(imageName: "mountain climbers",
               title: "mountain climbers",
               repCount: 15),
               
-        CMoves(imageName: "high-knees",
+        CMoves(imageName: "high knees",
               title: "high knees",
               repCount: 15),
              
-        CMoves(imageName: "jump-squat",
+        CMoves(imageName: "jump squats",
               title: "jump squats",
               repCount: 30),
             
-        CMoves(imageName: "plank-jacks",
+        CMoves(imageName: "plank jacks",
               title: "plank jacks",
               repCount: 30),
               
-        CMoves(imageName: "renegade-rows",
+        CMoves(imageName: "renegade rows",
               title: "renegade rows",
               repCount: 15),
         
-        CMoves(imageName: "shoulder-taps",
+        CMoves(imageName: "shoulder taps",
               title: "shoulder taps",
               repCount: 15),
             
@@ -53,8 +53,8 @@ struct CMoveList {
               title: "inchworms",
               repCount: 15),
               
-        CMoves(imageName: "fast-feet",
-              title: "fast-feet",
+        CMoves(imageName: "fast feet",
+              title: "fast feet",
               repCount: 15),
     ]
 }
