@@ -22,11 +22,11 @@ struct abMoveList {
               title: "starfish",
               repCount: 20),
               
-        abMoves(imageName: "russian twists",
+        abMoves(imageName: "russiantwists",
               title: "russian twists",
               repCount: 15),
         
-        abMoves(imageName: "scissor kicks",
+        abMoves(imageName: "scissorkicks",
               title: "scissor kicks",
               repCount: 15),
               
@@ -34,11 +34,11 @@ struct abMoveList {
               title: "crunches",
               repCount: 15),
              
-        abMoves(imageName: "side crunches",
+        abMoves(imageName: "sidecrunches",
               title: "side crunch (R)",
               repCount: 30),
             
-        abMoves(imageName: "side crunches",
+        abMoves(imageName: "sidecrunches",
               title: "side crunch (L)",
               repCount: 30),
               
@@ -46,15 +46,15 @@ struct abMoveList {
               title: "deadbugs",
               repCount: 15),
         
-        abMoves(imageName: "plank jacks",
+        abMoves(imageName: "plankjacks",
               title: "plank jacks",
               repCount: 15),
             
-        abMoves(imageName: "mountain climbers",
+        abMoves(imageName: "mountainclimbers",
               title: "mountain climbers",
               repCount: 15),
               
-        abMoves(imageName: "roll ups",
+        abMoves(imageName: "rollups",
               title: "roll ups",
               repCount: 15),
     ]

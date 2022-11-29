@@ -18,7 +18,7 @@ struct LMoves: Identifiable {
 struct LMoveList {
     
     static let topTen = [
-        LMoves(imageName: "squat",
+        LMoves(imageName: "squats",
               title: "squats",
               repCount: 20),
               
@@ -26,35 +26,35 @@ struct LMoveList {
               title: "deadlift",
               repCount: 15),
         
-        LMoves(imageName: "front lunges",
+        LMoves(imageName: "frontlunges",
               title: "forward lunges (R)",
               repCount: 15),
               
-        LMoves(imageName: "front lunges",
+        LMoves(imageName: "frontlunges",
               title: "forward lunges (L)",
               repCount: 15),
              
-        LMoves(imageName: "donkey kicks",
+        LMoves(imageName: "donkeykicks",
               title: "donkey kicks",
               repCount: 30),
             
-        LMoves(imageName: "fire hydrant",
+        LMoves(imageName: "firehydrant",
               title: "fire hydrants",
               repCount: 30),
               
-        LMoves(imageName: "hip thrusts",
+        LMoves(imageName: "hipthrusts",
               title: "hip thrursts",
               repCount: 15),
         
-        LMoves(imageName: "squat to raise",
+        LMoves(imageName: "squattoraise",
               title: "squat to overhead raise",
               repCount: 15),
             
-        LMoves(imageName: "back lunges",
+        LMoves(imageName: "backlunges",
               title: "back lunges (R)",
               repCount: 15),
               
-        LMoves(imageName: "back lunges",
+        LMoves(imageName: "backlunges",
               title: "back lunges (L)",
               repCount: 15),
     ]

@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct NewWorkout: View {
+    /*struct Myvariables{
+        static var SelectedEx1 = $selectedex1
+    }*/
+    @EnvironmentObject private var userSettings: UserSettings
     var exercises = ["back flies","push ups", "bicep curl", "tricep kickbacks", "skull crushers", "tricep dips", "arnold press", "shoulder press", "chest press", "back lunges", "burpees", "crunches", "deadbugs", "deadlift", "donkey kicks","fast feet", "fire hydrant", "front lunges", "high knees", "hip thrusts", "inchworms", "jump squats", "jumping jacks", "lateral raises", "mountain climbers", "plank jacks", "renegade rows", "roll ups", "russian twists", "scissor kicks", "shoulder taps"]
     @State var selectedex1 = "back flies"
     @State var selectedex2 = "back flies"
@@ -41,21 +45,66 @@ struct NewWorkout: View {
             ScrollView {
                 VStack{
                     Group{
-                        TextField("Workout Name", text:$workouttitle).frame(width:300, height: 50).border(/*@START_MENU_TOKEN@*/Color(hue: 1.0, saturation: 0.468, brightness: 0.13, opacity: 0.448)/*@END_MENU_TOKEN@*/, width: /*@START_MENU_TOKEN@*/2/*@END_MENU_TOKEN@*/)
+                        TextField("Workout Name", text:$userSettings.workoutTitle).frame(width:300, height: 50).border(/*@START_MENU_TOKEN@*/Color(hue: 1.0, saturation: 0.468, brightness: 0.13, opacity: 0.448)/*@END_MENU_TOKEN@*/, width: /*@START_MENU_TOKEN@*/2/*@END_MENU_TOKEN@*/)
                         Spacer()
                         HStack{
                             Text("Excercise 1")
+                                .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                            Picker("Exercise 1", selection: $userSettings.ex) {
+                                Group{
+                                    Text("Back Flies").tag(UserSettings.Ex1.backflies)
+                                    Text("Push ups").tag(UserSettings.Ex1.pushups)
+                                    Text("Squats").tag(UserSettings.Ex1.squats)
+                                    Text("Bicep curl").tag(UserSettings.Ex1.bicepcurl)
+                                    Text("Tricep Kickbacks").tag(UserSettings.Ex1.tricepkickbacks)
+                                    Text("Skull crushers").tag(UserSettings.Ex1.skullcrushers)
+                                    Text("Tricep Dips").tag(UserSettings.Ex1.tricepdips)
+                                    Text("Arnold Press").tag(UserSettings.Ex1.arnoldpress)
+                                    Text("Shoulder Press").tag(UserSettings.Ex1.shoulderpress)
+                                    Text("Chest Press ").tag(UserSettings.Ex1.chestpress)
+                                }
+                                Group{
+                                    Text("Back Lunges").tag(UserSettings.Ex1.backlunges)
+                                    Text("Burpees").tag(UserSettings.Ex1.burpees)
+                                    Text("Crunches").tag(UserSettings.Ex1.crunches)
+                                    Text("Deadbugs").tag(UserSettings.Ex1.deadbugs)
+                                    Text("Deadlift").tag(UserSettings.Ex1.deadlift)
+                                    Text("Donkey    Kicks").tag(UserSettings.Ex1.donkeykicks)
+                                    Text("Fast Feet").tag(UserSettings.Ex1.fastfeet)
+                                    Text("Fire Hydrant").tag(UserSettings.Ex1.firehydrant)
+                                    Text("Front Lunges").tag(UserSettings.Ex1.frontlunges)
+                                    Text("High Knees").tag(UserSettings.Ex1.highknees)
+                                }
+                                Group{
+                                    Text("Hip thrusts").tag(UserSettings.Ex1.hipthrusts)
+                                    Text("Inchworms").tag(UserSettings.Ex1.inchworms)
+                                    Text("Jump squats").tag(UserSettings.Ex1.jumpsquats)
+                                    Text("Jumping jacks").tag(UserSettings.Ex1.jumpingjacks)
+                                    Text("Lateeral raises").tag(UserSettings.Ex1.lateralraises)
+                                    Text("Mountain Climbers").tag(UserSettings.Ex1.mountainclimbers)
+                                    Text("plank jacks").tag(UserSettings.Ex1.plankjacks)
+                                    Text("renegade rows").tag(UserSettings.Ex1.renegaderows)
+                                    Text("roll ups").tag(UserSettings.Ex1.rollups)
+                                    Text("russian twists").tag(UserSettings.Ex1.russiantwists)
+                                }
+                                Group{
+                                    Text("scissor kicks").tag(UserSettings.Ex1.scissorkicks)
+                                    Text("shoulder taps").tag(UserSettings.Ex1.shouldertaps)
+                                }
+                                    }
+                        }
+                           /* Text("Excercise 1")
                                 .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                             Picker("Exercise 1", selection: $selectedex1) {
                                 ForEach(exercises, id: \.self) {
                                     Text($0)
                                 }
                             }
-                        }
+                        }*/
                         HStack{
                             Spacer()
-                            Stepper(value: $rep) {
-                                Text("Reps\t\(rep)").fontWeight(.bold).padding(.leading, 175.0)
+                            Stepper(value: $userSettings.rep1) {
+                                Text("Reps\t\(userSettings.rep1)").fontWeight(.bold).padding(.leading, 175.0)
                             }
                             Spacer()
                         }
@@ -63,48 +112,49 @@ struct NewWorkout: View {
                         HStack{
                             Text("Excercise 2")
                                 .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
-                            Picker("Exercise 2", selection: $selectedex2) {
-                                ForEach(exercises, id: \.self) {
-                                    Text($0)
-                                }
-                            }
+                            Picker("Exercise 2", selection: $userSettings.ex2) {
+                                        Text("Back Flies").tag(UserSettings.Ex2.backflies)
+                                        Text("Push ups").tag(UserSettings.Ex2.pushups)
+                                        Text("Squats")      .tag(UserSettings.Ex2.squats)
+                                    }
                         }
                             HStack{
                                 Spacer()
-                                Stepper(value: $rep2) {
-                                    Text("Reps\t\(rep2)").fontWeight(.bold).padding(.leading, 175.0)
+                                Stepper(value: $userSettings.rep2) {
+                                    Text("Reps\t\(userSettings.rep2)").fontWeight(.bold).padding(.leading, 175.0)
                                 }
                                 Spacer()
                             }
-                            HStack{
-                                Text("Excercise 3")
-                                    .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
-                                Picker("Exercise 3", selection: $selectedex3) {
-                                    ForEach(exercises, id: \.self) {
-                                        Text($0)
+                        HStack{
+                            Text("Excercise 3")
+                                .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                            Picker("Exercise 3", selection: $userSettings.ex2) {
+                                        Text("Back Flies").tag(UserSettings.Ex3.backflies)
+                                        Text("Push ups").tag(UserSettings.Ex3.pushups)
+                                        Text("Squats").tag(UserSettings.Ex3.squats)
                                     }
-                                }
-                            }
+                        }
                             HStack{
                                 Spacer()
-                                Stepper(value: $rep3) {
-                                    Text("Reps\t\(rep3)").fontWeight(.bold).padding(.leading, 175.0)
+                                Stepper(value: $userSettings.rep3) {
+                                    Text("Reps\t\(userSettings.rep3)").fontWeight(.bold).padding(.leading, 175.0)
                                 }
                                 Spacer()
                             }
-                            HStack{
-                                Text("Excercise 4")
-                                    .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
-                                Picker("Exercise 4", selection: $selectedex4) {
-                                    ForEach(exercises, id: \.self) {
-                                        Text($0)
+                        HStack{
+                            Text("Excercise 4")
+                                .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                            Picker("Exercise 4", selection: $userSettings.ex4) {
+                                        Text("Back Flies").tag(UserSettings.Ex4.backflies)
+                                        Text("Push ups").tag(UserSettings.Ex4.pushups)
+                                        Text("Squats").tag(UserSettings.Ex4.squats)
+                               
                                     }
-                                }
-                            }
+                        }
                             HStack{
                                 Spacer()
-                                Stepper(value: $rep4) {
-                                    Text("Reps\t\(rep4)").fontWeight(.bold).padding(.leading, 175.0)
+                                Stepper(value: $userSettings.rep4) {
+                                    Text("Reps\t\(userSettings.rep4)").fontWeight(.bold).padding(.leading, 175.0)
                                 }
                                 Spacer()
                             }
@@ -113,64 +163,64 @@ struct NewWorkout: View {
                         HStack{
                             Text("Excercise 5")
                                 .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
-                            Picker("Exercise 5", selection: $selectedex5) {
-                                ForEach(exercises, id: \.self) {
-                                    Text($0)
-                                }
-                            }
+                            Picker("Exercise 5", selection: $userSettings.ex5) {
+                                        Text("Back Flies").tag(UserSettings.Ex5.backflies)
+                                        Text("Push ups").tag(UserSettings.Ex5.pushups)
+                                        Text("Squats").tag(UserSettings.Ex5.squats)
+                                    }
                         }
                         HStack{
                             Spacer()
-                            Stepper(value: $rep5) {
-                                Text("Reps\t\(rep5)").fontWeight(.bold).padding(.leading, 175.0)
+                            Stepper(value: $userSettings.rep5) {
+                                Text("Reps\t\(userSettings.rep5)").fontWeight(.bold).padding(.leading, 175.0)
                             }
                             Spacer()
                         }
                         HStack{
                             Text("Excercise 6")
                                 .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
-                            Picker("Exercise 6", selection: $selectedex6) {
-                                ForEach(exercises, id: \.self) {
-                                    Text($0)
-                                }
-                            }
+                            Picker("Exercise 6", selection: $userSettings.ex6) {
+                                        Text("Back Flies").tag(UserSettings.Ex6.backflies)
+                                        Text("Push ups").tag(UserSettings.Ex6.pushups)
+                                        Text("Squats").tag(UserSettings.Ex6.squats)
+                                    }
                         }
                         HStack{
                             Spacer()
-                            Stepper(value: $rep6) {
-                                Text("Reps\t\(rep6)").fontWeight(.bold).padding(.leading, 175.0)
+                            Stepper(value: $userSettings.rep6) {
+                                Text("Reps\t\(userSettings.rep6)").fontWeight(.bold).padding(.leading, 175.0)
                             }
                             Spacer()
                         }
                         HStack{
                             Text("Excercise 7")
                                 .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
-                            Picker("Exercise 7", selection: $selectedex7) {
-                                ForEach(exercises, id: \.self) {
-                                    Text($0)
-                                }
-                            }
+                            Picker("Exercise 7", selection: $userSettings.ex7) {
+                                        Text("Back Flies").tag(UserSettings.Ex7.backflies)
+                                        Text("Push ups").tag(UserSettings.Ex7.pushups)
+                                        Text("Squats").tag(UserSettings.Ex7.squats)
+                                    }
                         }
                         HStack{
                             Spacer()
-                            Stepper(value: $rep7) {
-                                Text("Reps\t\(rep7)").fontWeight(.bold).padding(.leading, 175.0)
+                            Stepper(value: $userSettings.rep7) {
+                                Text("Reps\t\(userSettings.rep7)").fontWeight(.bold).padding(.leading, 175.0)
                             }
                             Spacer()
                         }
                         HStack{
                             Text("Excercise 8")
                                 .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
-                            Picker("Exercise 8", selection: $selectedex8) {
-                                ForEach(exercises, id: \.self) {
-                                    Text($0)
-                                }
-                            }
+                            Picker("Exercise 8", selection: $userSettings.ex8) {
+                                        Text("Back Flies").tag(UserSettings.Ex8.backflies)
+                                        Text("Push ups").tag(UserSettings.Ex8.pushups)
+                                        Text("Squats").tag(UserSettings.Ex8.squats)
+                                    }
                         }
                         HStack{
                             Spacer()
-                            Stepper(value: $rep8) {
-                                Text("Reps\t\(rep8)").fontWeight(.bold).padding(.leading, 175.0)
+                            Stepper(value: $userSettings.rep8) {
+                                Text("Reps\t\(userSettings.rep8)").fontWeight(.bold).padding(.leading, 175.0)
                             }
                             Spacer()
                         }
@@ -179,70 +229,71 @@ struct NewWorkout: View {
                             HStack{
                                 Text("Excercise 9")
                                     .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
-                                Picker("Exercise 9", selection: $selectedex9) {
-                                    ForEach(exercises, id: \.self) {
-                                        Text($0)
-                                    }
-                                }
+                                Picker("Exercise 9", selection: $userSettings.ex9) {
+                                            Text("Back Flies").tag(UserSettings.Ex9.backflies)
+                                            Text("Push ups").tag(UserSettings.Ex9.pushups)
+                                            Text("Squats").tag(UserSettings.Ex9.squats)
+                                        }
                             }
                             HStack{
                                 Spacer()
-                                Stepper(value: $rep9) {
-                                    Text("Reps\t\(rep9)").fontWeight(.bold).padding(.leading, 175.0)
+                                Stepper(value: $userSettings.rep9) {
+                                    Text("Reps\t\(userSettings.rep9)").fontWeight(.bold).padding(.leading, 175.0)
                                 }
                                 Spacer()
                             }
                             HStack{
                                 Text("Excercise 10")
                                     .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
-                                Picker("Exercise 10", selection: $selectedex10) {
-                                    ForEach(exercises, id: \.self) {
-                                        Text($0)
-                                    }
-                                }
+                                Picker("Exercise 10", selection: $userSettings.ex10) {
+                                            Text("Back Flies").tag(UserSettings.Ex10.backflies)
+                                            Text("Push ups").tag(UserSettings.Ex10.pushups)
+                                            Text("Squats").tag(UserSettings.Ex10.squats)
+                                        }
                             }
                             HStack{
                                 Spacer()
-                                Stepper(value: $rep10) {
-                                    Text("Reps\t\(rep10)").fontWeight(.bold).padding(.leading, 175.0)
+                                Stepper(value: $userSettings.rep10) {
+                                    Text("Reps\t\(userSettings.rep10)").fontWeight(.bold).padding(.leading, 175.0)
                                 }
                                 Spacer()
                             }
                             HStack{
                                 Text("Excercise 11")
                                     .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
-                                Picker("Exercise 11", selection: $selectedex11) {
-                                    ForEach(exercises, id: \.self) {
-                                        Text($0)
-                                    }
-                                }
+                                Picker("Exercise 11", selection: $userSettings.ex11) {
+                                            Text("Back Flies").tag(UserSettings.Ex11.backflies)
+                                            Text("Push ups").tag(UserSettings.Ex11.pushups)
+                                            Text("Squats").tag(UserSettings.Ex11.squats)
+                                        }
                             }
                             HStack{
                                 Spacer()
-                                Stepper(value: $rep11) {
-                                    Text("Reps\t\(rep11)").fontWeight(.bold).padding(.leading, 175.0)
+                                Stepper(value: $userSettings.rep11) {
+                                    Text("Reps\t\(userSettings.rep11)").fontWeight(.bold).padding(.leading, 175.0)
                                 }
                                 Spacer()
                             }
                             HStack{
                                 Text("Excercise 12")
                                     .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
-                                Picker("Exercise 12", selection: $selectedex12) {
-                                    ForEach(exercises, id: \.self) {
-                                        Text($0)
-                                    }
-                                }
+                                Picker("Exercise 12", selection: $userSettings.ex12) {
+                                            Text("Back Flies").tag(UserSettings.Ex12.backflies)
+                                            Text("Push ups").tag(UserSettings.Ex12.pushups)
+                                            Text("Squats").tag(UserSettings.Ex12.squats)
+                                        }
                             }
                             HStack{
                                 Spacer()
-                                Stepper(value: $rep12) {
-                                    Text("Reps\t\(rep12)").fontWeight(.bold).padding(.leading, 175.0)
+                                Stepper(value: $userSettings.rep12) {
+                                    Text("Reps\t\(userSettings.rep12)").fontWeight(.bold).padding(.leading, 175.0)
                                 }
                                 Spacer()
                             }
                             Spacer()
                             HStack{
                                 Spacer()
+                            
                                 HStack{
                                     Text("Add Exercise ")
                                     +
@@ -254,11 +305,7 @@ struct NewWorkout: View {
                                 
                                 Spacer()
                                 
-                                NavigationLink(destination: NewWorkoutView(workoutTitle: $workouttitle, rep1: $rep,  rep2: $rep2, rep3: $rep3, rep4: $rep4, rep5: $rep5, rep6: $rep6, rep7: $rep7, rep8: $rep8, rep9: $rep9, rep10: $rep10, rep11: $rep11, rep12: $rep12, selectedEx1: $selectedex1, selectedEx2: $selectedex2, selectedEx3: $selectedex3, selectedEx4: $selectedex4, selectedEx5: $selectedex5, selectedEx6: $selectedex6,
-                                    selectedEx7:
-                                    $selectedex7,
-                                                            selectedEx8:    $selectedex8,selectedEx9:
-                                                                                                           $selectedex9, selectedEx10:    $selectedex10)){
+                                NavigationLink(destination: NewWorkoutView()){
                                     Text("Create Workout")
                                         .font(.title3)
                                         .foregroundColor(Color.white)

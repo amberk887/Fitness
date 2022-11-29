@@ -18,52 +18,52 @@ struct Video: Identifiable {
 struct VideoList {
     
     static let topTen = [
-        Video(imageName: "bicep curl",
+        Video(imageName: "bicepcurl",
               title: "bicep curl",
               repCount: 30,
               selected:false),
               
-        Video(imageName: "tricep kickbacks",
+        Video(imageName: "tricepkickbacks",
               title: "tricep kickback",
               repCount: 20,
               selected:false),
         
-        Video(imageName: "skull crushers",
+        Video(imageName: "skullcrushers",
               title: "skull crushers",
               repCount: 15,
               selected:false),
               
-        Video(imageName: "tricep dips",
+        Video(imageName: "tricepdips",
               title: "tricep dips",
               repCount: 15,
               selected:false),
              
-        Video(imageName: "arnold press",
+        Video(imageName: "arnoldpress",
               title: "arnold press",
               repCount: 15,
               selected:false),
             
-        Video(imageName: "shoulder press",
+        Video(imageName: "shoulderpress",
               title: "shoulder press",
               repCount: 15,
               selected:false),
               
-        Video(imageName: "chest press",
-              title: "chest press",
+        Video(imageName: "chestpress",
+              title: "chestpress",
               repCount: 15,
               selected:false),
         
-        Video(imageName: "lateral raises",
+        Video(imageName: "lateralraises",
               title: "lateral raises",
               repCount: 12,
               selected:false),
             
-        Video(imageName: "back flies",
+        Video(imageName: "backflies",
               title: "back flies",
               repCount: 10,
               selected:false),
               
-        Video(imageName: "push ups",
+        Video(imageName: "pushups",
               title: "push ups",
               repCount: 10,
               selected:false),

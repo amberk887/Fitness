@@ -8,6 +8,8 @@
 
 import SwiftUI
 struct ContentView: View {
+    @EnvironmentObject private var userSettings: UserSettings
+
     var workouts: [Workouts] = WorkoutList.topTen
     
     var body: some View {
@@ -49,6 +51,19 @@ struct ContentView: View {
                         .frame(width:300,height:50,alignment:.center)
                         .background(Color.black)
                         .cornerRadius(12)
+                }
+                if (userSettings.workoutTitle != ""){
+                    NavigationLink(destination: NewWorkoutView()){
+                        Text(userSettings.workoutTitle)
+                            .font(.title3)
+                            .fontWeight(.heavy)
+                            .foregroundColor(Color.white)
+                            .frame(width:300,height:50,alignment:.center)
+                            .background(Color.black)
+                            .cornerRadius(12)
+                    }
+
+
                 }
                 Spacer()
                 Spacer()
