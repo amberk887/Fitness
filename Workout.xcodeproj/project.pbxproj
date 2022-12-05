@@ -19,6 +19,7 @@
 		047D9F3928FDCEF500A9FCDB /* LegWorkout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047D9F3828FDCEF500A9FCDB /* LegWorkout.swift */; };
 		0482B3FF29070FCD0004F2C9 /* WorkoutDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0482B3FE29070FCD0004F2C9 /* WorkoutDescription.swift */; };
 		0482B401290711DA0004F2C9 /* ArmWorkoutListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0482B400290711DA0004F2C9 /* ArmWorkoutListView.swift */; };
+		04B4FC86293D7B3800BE5FC5 /* backup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B4FC85293D7B3700BE5FC5 /* backup.swift */; };
 		04C97AF829082D0F0017970B /* LWorkoutDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C97AF729082D0F0017970B /* LWorkoutDescription.swift */; };
 		04C97AFA29082D500017970B /* LWorkoutListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C97AF929082D500017970B /* LWorkoutListView.swift */; };
 		04C97AFC290833EF0017970B /* CWorkoutDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C97AFB290833EF0017970B /* CWorkoutDescription.swift */; };
@@ -41,6 +42,7 @@
 		047D9F3828FDCEF500A9FCDB /* LegWorkout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegWorkout.swift; sourceTree = "<group>"; };
 		0482B3FE29070FCD0004F2C9 /* WorkoutDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutDescription.swift; sourceTree = "<group>"; };
 		0482B400290711DA0004F2C9 /* ArmWorkoutListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArmWorkoutListView.swift; sourceTree = "<group>"; };
+		04B4FC85293D7B3700BE5FC5 /* backup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = backup.swift; sourceTree = "<group>"; };
 		04C97AF729082D0F0017970B /* LWorkoutDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LWorkoutDescription.swift; sourceTree = "<group>"; };
 		04C97AF929082D500017970B /* LWorkoutListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LWorkoutListView.swift; sourceTree = "<group>"; };
 		04C97AFB290833EF0017970B /* CWorkoutDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWorkoutDescription.swift; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 				04C97AFB290833EF0017970B /* CWorkoutDescription.swift */,
 				04C97AFD290833FF0017970B /* CWorkoutListView.swift */,
 				04C97AFF290834200017970B /* AbWorkoutListView.swift */,
+				04B4FC85293D7B3700BE5FC5 /* backup.swift */,
 				04C97B01290834440017970B /* AbWorkoutDescription.swift */,
 				04C97AF929082D500017970B /* LWorkoutListView.swift */,
 				041C85DD28FD0B8D00CBFC70 /* Workout */,
@@ -195,6 +198,7 @@
 				0482B3FF29070FCD0004F2C9 /* WorkoutDescription.swift in Sources */,
 				047D9F3928FDCEF500A9FCDB /* LegWorkout.swift in Sources */,
 				04C97AFA29082D500017970B /* LWorkoutListView.swift in Sources */,
+				04B4FC86293D7B3800BE5FC5 /* backup.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -690,16 +690,16 @@ struct NewWorkout: View {
                             HStack{
                                 Spacer()
                             
-                                HStack{
+                              /*  HStack{
                                     Text("Add Exercise ")
                                     +
                                     Text(Image(systemName:"plus"))
                                 }                        .frame(width: /*@START_MENU_TOKEN@*/175.0/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/50.0/*@END_MENU_TOKEN@*/)
                                     .background(/*@START_MENU_TOKEN@*//*@PLACEHOLDER=View@*/Color.blue/*@END_MENU_TOKEN@*/)
                                     .foregroundColor(/*@START_MENU_TOKEN@*/.white/*@END_MENU_TOKEN@*/)
-                                    .cornerRadius(/*@START_MENU_TOKEN@*/12.0/*@END_MENU_TOKEN@*/)
+                                    .cornerRadius(/*@START_MENU_TOKEN@*/12.0/*@END_MENU_TOKEN@*/)*/
                                 
-                                Spacer()
+                              //  Spacer()
                                 
                                 NavigationLink(destination: NewWorkoutView()){
                                     Text("Create Workout")
