@@ -5,8 +5,7 @@ Work It is an iOS app for beginner and avid exercisers. Work It allows users to 
 ### Tech Stack
 This app was created using XCode and Swift
 
-### For Users
-### For Developers
+### How to Download or Contribute
 
 To get started...
 you must have a Mac and have XCode downloaded
@@ -28,4 +27,21 @@ Choose where you want to save the project and select "Clone" again
 
 <img width="327" alt="Screen Shot 2022-10-17 at 12 17 12 AM" src="https://user-images.githubusercontent.com/78056972/196088687-3d392d0c-cbf3-4e49-b8ee-58ed584a4d07.png">
 
-Once you have successfully cloned the repo,  you can simply run the app by pressing the run button. You can use the simulator or follow the "For Users" instructions above to run it on your own device.
+
+Once you have successfully cloned the repo,  you can simply run the app by pressing the run button. You can use the simulator or run the app on your own device.
+
+### How to run on your device
+1.	Connect your phone to your Mac
+2.	At the top of the screen where you select the device to run on, your phone should now show up under iOS Device
+<img width="302" alt="Screen Shot 2022-12-06 at 11 46 17 AM" src="https://user-images.githubusercontent.com/78056972/205975592-9b6cfef5-e41e-4510-affa-cdaad992d55e.png">
+3.	Once you select your device, you’ll be prompted to enter your Apple ID credentials
+4.	The first time you run the app on your device you will have to enable Developer permissions in your device’s settings
+5.	To enable Developer Mode go to your Settings > Privacy & Security. At the bottom of the screen, click Developer Mode and click the toggle to be ON.
+
+![IMG_3479](https://user-images.githubusercontent.com/78056972/205975718-1f334d8c-48bf-4222-b897-414f29bb3399.PNG)
+![IMG_3480](https://user-images.githubusercontent.com/78056972/205975723-fbd70f54-a4fc-499f-b65d-46b3877f53de.PNG)
+![IMG_3481](https://user-images.githubusercontent.com/78056972/205975725-c45b1b4e-7e89-4c61-9a57-b09f4536ead6.PNG)
+
+Helpful Resources: https://buildfire.com/how-to-test-your-app-on-an-iphone-using-xcode/
+https://developer.apple.com/documentation/xcode/enabling-developer-mode-on-a-device
+
