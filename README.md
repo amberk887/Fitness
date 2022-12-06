@@ -38,9 +38,9 @@ Once you have successfully cloned the repo,  you can simply run the app by press
 4.	The first time you run the app on your device you will have to enable Developer permissions in your device’s settings
 5.	To enable Developer Mode go to your Settings > Privacy & Security. At the bottom of the screen, click Developer Mode and click the toggle to be ON.
 
-![IMG_3479](https://user-images.githubusercontent.com/78056972/205975718-1f334d8c-48bf-4222-b897-414f29bb3399.PNG)
-![IMG_3480](https://user-images.githubusercontent.com/78056972/205975723-fbd70f54-a4fc-499f-b65d-46b3877f53de.PNG)
-![IMG_3481](https://user-images.githubusercontent.com/78056972/205975725-c45b1b4e-7e89-4c61-9a57-b09f4536ead6.PNG)
+<img width ="327" src = "https://user-images.githubusercontent.com/78056972/205975718-1f334d8c-48bf-4222-b897-414f29bb3399.PNG">
+<img width ="327" src = "https://user-images.githubusercontent.com/78056972/205975723-fbd70f54-a4fc-499f-b65d-46b3877f53de.PNG">
+<img width ="327" src = "https://user-images.githubusercontent.com/78056972/205975725-c45b1b4e-7e89-4c61-9a57-b09f4536ead6.PNG">
 
 Helpful Resources: https://buildfire.com/how-to-test-your-app-on-an-iphone-using-xcode/
 https://developer.apple.com/documentation/xcode/enabling-developer-mode-on-a-device
