@@ -34,9 +34,15 @@ Once you have successfully cloned the repo,  you can simply run the app by press
 1.	Connect your phone to your Mac
 2.	At the top of the screen where you select the device to run on, your phone should now show up under iOS Device
 <img width="302" alt="Screen Shot 2022-12-06 at 11 46 17 AM" src="https://user-images.githubusercontent.com/78056972/205975592-9b6cfef5-e41e-4510-affa-cdaad992d55e.png">
-3.	Once you select your device, you’ll be prompted to enter your Apple ID credentials
-4.	The first time you run the app on your device you will have to enable Developer permissions in your device’s settings
+
+3.  Once you select your device, you'll be prompted to enter your Apple ID credentials
+
+
+4.  The first time you run the app on your device you will have to enable Developer Mode permissions in your device's settings
+
+
 5.	To enable Developer Mode go to your Settings > Privacy & Security. At the bottom of the screen, click Developer Mode and click the toggle to be ON.
+
 
 <img width ="327" src = "https://user-images.githubusercontent.com/78056972/205975718-1f334d8c-48bf-4222-b897-414f29bb3399.PNG">
 <img width ="327" src = "https://user-images.githubusercontent.com/78056972/205975723-fbd70f54-a4fc-499f-b65d-46b3877f53de.PNG">
